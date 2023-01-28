@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>web_mongodb</RootNamespace>
+    <UserSecretsId>7a520889-cfee-47eb-909e-f407aeb22eee</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+	  <PackageReference Include="MongoDB.Bson" Version="2.19.0" />
+	  <PackageReference Include="MongoDB.Driver" Version="2.19.0" />
+	  <PackageReference Include="MongoDB.Driver.Core" Version="2.19.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\web-mongodb-infra\web-mongodb-infra.csproj" />
+  </ItemGroup>
+
+</Project>
